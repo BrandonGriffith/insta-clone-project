@@ -8,8 +8,8 @@ body {
 
 @layer components {
     .navIcon {
-        @apply hidden w-8 cursor-pointer md:flex hover:scale-150
-        transition ease-in-out duration-100 text-white
+        @apply hidden w-8 cursor-pointer md:flex hover:scale-125
+        transition ease-in-out duration-200 text-white
         active:text-blue-400
     }
 }

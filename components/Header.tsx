@@ -12,7 +12,7 @@ import {
 
 const Header = () => {
     return (
-        <div>
+        <div className="z-40 shadow-md sticky top-0">
             <div className="flex justify-between max-w-7xl lg:mx-auto 
             border-b-4 border-gray pb-1 rounded-lg px-1">
                 <div className="relative w-[20%] cursor-pointer hidden md:inline-grid">
@@ -44,11 +44,21 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex space-x-4">
-                    <MenuIcon className="w-10 text-white md:hidden cursor-pointer" />
+                    <div className="relative md:hidden">
+                        <MenuIcon className="w-10 text-white md:hidden cursor-pointer" />
+                        <p className="absolute -right-2 top-1 bg-red-600 flex
+                        rounded-full justify-center h-5 w-5 items-center 
+                        opacity-75 animate-pulse text-white">3</p>
+                    </div>
                     <HomeIcon className="navIcon" />
                     <UserGroupIcon className="navIcon" />
-                    <PaperAirplaneIcon className="navIcon" />
-                    <div className="relative w-20 bg-white rounded-full cursor-pointer">
+                    <div className="relative navIcon">
+                        <PaperAirplaneIcon className="rotate-45 navIcon" />
+                        <p className="absolute -right-2 top-1 bg-red-600 flex
+                        rounded-full justify-center h-5 w-5 items-center 
+                        opacity-75 animate-pulse">3</p>
+                    </div>
+                    <div className="relative w-14 bg-white rounded-full cursor-pointer">
                         <Image
                             src="/favicon.ico"
                             alt="UserIcon"
