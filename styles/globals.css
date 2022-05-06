@@ -5,3 +5,11 @@
 body {
     background-color: rgb(34, 33, 33);
 }
+
+@layer components {
+    .navIcon {
+        @apply hidden w-8 cursor-pointer md:flex hover:scale-150
+        transition ease-in-out duration-100 text-white
+        active:text-blue-400
+    }
+}

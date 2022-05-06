@@ -13,7 +13,8 @@ import {
 const Header = () => {
     return (
         <div>
-            <div className="flex justify-between max-w-7xl lg:mx-auto border-b-4 border-gray pb-1 rounded-lg">
+            <div className="flex justify-between max-w-7xl lg:mx-auto 
+            border-b-4 border-gray pb-1 rounded-lg px-1">
                 <div className="relative w-[20%] cursor-pointer hidden md:inline-grid">
                     <Image
                         src="/instagram.svg"
@@ -43,8 +44,17 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex space-x-4">
-                    <MenuIcon className="w-10 text-white md:hidden" />
-                    <HomeIcon className="w-10 text-white hidden md:flex" />
+                    <MenuIcon className="w-10 text-white md:hidden cursor-pointer" />
+                    <HomeIcon className="navIcon" />
+                    <UserGroupIcon className="navIcon" />
+                    <PaperAirplaneIcon className="navIcon" />
+                    <div className="relative w-20 bg-white rounded-full cursor-pointer">
+                        <Image
+                            src="/favicon.ico"
+                            alt="UserIcon"
+                            layout="fill"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
