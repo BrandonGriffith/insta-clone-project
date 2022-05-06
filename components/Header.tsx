@@ -2,9 +2,7 @@ import Image from "next/image";
 import { HomeIcon } from "@heroicons/react/solid";
 import {
     SearchIcon,
-    PlusCircleIcon,
     UserGroupIcon,
-    HeartIcon,
     PaperAirplaneIcon,
     MenuIcon
 } from "@heroicons/react/outline"
@@ -46,17 +44,13 @@ const Header = () => {
                 <div className="flex space-x-4">
                     <div className="relative md:hidden">
                         <MenuIcon className="w-10 text-white md:hidden cursor-pointer" />
-                        <p className="absolute -right-2 top-1 bg-red-600 flex
-                        rounded-full justify-center h-5 w-5 items-center 
-                        opacity-75 animate-pulse text-white">3</p>
+                        <p className="noteRed">3</p>
                     </div>
                     <HomeIcon className="navIcon" />
                     <UserGroupIcon className="navIcon" />
                     <div className="relative navIcon">
                         <PaperAirplaneIcon className="rotate-45 navIcon" />
-                        <p className="absolute -right-2 top-1 bg-red-600 flex
-                        rounded-full justify-center h-5 w-5 items-center 
-                        opacity-75 animate-pulse">3</p>
+                        <p className="noteRed">3</p>
                     </div>
                     <div className="relative w-14 bg-white rounded-full cursor-pointer">
                         <Image
