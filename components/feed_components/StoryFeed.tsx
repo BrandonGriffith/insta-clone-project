@@ -18,7 +18,11 @@ const StoryFeed = () => {
     return (
         <div>
             {fakeInfo.map((profile: UserProfile) =>
-                <Story key={profile.id} />
+                <Story
+                    key={profile.id}
+                    avatar={profile.avatar}
+                    username={profile.username}
+                />
             )}
         </div>
     )
