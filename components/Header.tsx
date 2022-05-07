@@ -1,4 +1,5 @@
 import Image from "next/image";
+import faker from "@faker-js/faker"
 import { HomeIcon } from "@heroicons/react/solid";
 import {
     SearchIcon,
@@ -53,11 +54,12 @@ const Header = () => {
                         <PaperAirplaneIcon className="rotate-45 navIcon" />
                         <p className="noteRed">3</p>
                     </div>
-                    <div className="relative w-14 bg-white rounded-full cursor-pointer">
+                    <div className="relative w-14 bg-white rounded-full cursor-pointer mt-1">
                         <Image
-                            src="/favicon.ico"
+                            src={faker.image.avatar()}
                             alt="UserIcon"
                             layout="fill"
+                            className="rounded-full"
                         />
                     </div>
                 </div>
