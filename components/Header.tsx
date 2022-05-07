@@ -19,6 +19,7 @@ const Header = () => {
                         alt=""
                         layout="fill"
                         className="rounded-full"
+                        priority
                     />
                 </div>
                 <div className="relative cursor-pointer w-10 md:hidden flex-shrink-0">
