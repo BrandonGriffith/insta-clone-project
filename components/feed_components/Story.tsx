@@ -14,4 +14,5 @@ const Story = (props: UserProfile) => {
         </div>
     )
 }
+
 export default Story
