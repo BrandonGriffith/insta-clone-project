@@ -16,7 +16,9 @@ const StoryFeed = () => {
     }, []);
 
     return (
-        <div>
+        <div className="flex space-x-2 p-5 border-2 border-gray-600 rounded-lg
+        overflow-x-scroll
+        ">
             {fakeInfo.map((profile: UserProfile) =>
                 <Story
                     key={profile.id}
