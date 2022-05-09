@@ -54,7 +54,9 @@ const Header = () => {
                         <PaperAirplaneIcon className="rotate-45 navIcon" />
                         <p className="noteRed">3</p>
                     </div>
-                    <div className="relative w-14 bg-white rounded-full cursor-pointer mt-1">
+                    <div className="relative w-10 h-10 rounded-full cursor-pointer
+                    mt-1 border-2 border-blue-400
+                    ">
                         <Image
                             src={faker.image.avatar()}
                             alt="UserIcon"

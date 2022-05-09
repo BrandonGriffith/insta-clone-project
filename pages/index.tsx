@@ -5,7 +5,7 @@ import UserFeed from '../components/UserFeed';
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <div className="h-screen overflow-y-scroll scrollbar-hide">
       <Head>
         <title>Insta Clone Project</title>
         <link rel="icon" href="/favicon.ico" />

@@ -17,7 +17,7 @@ const StoryFeed = () => {
 
     return (
         <div className="flex space-x-2 p-5 border-2 border-gray-600 rounded-lg
-        overflow-x-scroll
+        overflow-x-scroll scrollbar-thin scrollbar-thumb-black
         ">
             {fakeInfo.map((profile: UserProfile) =>
                 <Story
