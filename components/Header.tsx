@@ -38,14 +38,14 @@ const Header = () => {
                         </div>
                         <input type="text" placeholder="Search"
                             className="bg-slate-600 text-slate-100 
-                        rounded-lg p-1 block pl-10 border-2 w-80
+                        rounded-lg block pl-10 border-2 max-h-full w-80
                         border-black focus:border-black focus:ring-black"
                         />
                     </div>
                 </div>
                 <div className="flex space-x-4">
                     <div className="relative md:hidden">
-                        <MenuIcon className="w-10 text-white md:hidden cursor-pointer" />
+                        <MenuIcon className="w-10 text-white md:hidden pt-2 cursor-pointer" />
                         <p className="noteRed">3</p>
                     </div>
                     <HomeIcon className="navIcon" />

@@ -1,4 +1,5 @@
 import StoryFeed from "./feed_components/StoryFeed"
+import UserPosts from "./feed_components/UserPosts"
 
 const UserFeed = () => {
     return (
@@ -7,6 +8,7 @@ const UserFeed = () => {
         ">
             <div className="col-span-2">
                 <StoryFeed />
+                <UserPosts />
             </div>
             <div>
             </div>
