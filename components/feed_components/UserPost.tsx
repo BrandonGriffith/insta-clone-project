@@ -1,4 +1,6 @@
+import { DotsHorizontalIcon } from "@heroicons/react/outline"
 import Image from "next/image"
+
 
 const UserPost = (props: any) => {
     return (
@@ -12,6 +14,7 @@ const UserPost = (props: any) => {
                 />
             </div>
             <p>{props.username}</p>
+            <DotsHorizontalIcon className="h-5" />
         </div>
     )
 }
