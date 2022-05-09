@@ -4,9 +4,7 @@ import { UserProfile } from "../Types"
 const Story = (props: UserProfile) => {
     return (
         <div className="text-white">
-            <div className="rounded-full cursor-pointer object-contain
-                hover:scale-110 transform duration-150 ease-in-out overflow-hidden
-                border-2 border-blue-400 w-14 h-14">
+            <div className="userIcon">
                 <Image
                     src={props.avatar}
                     alt={props.avatar}
