@@ -1,6 +1,7 @@
 import StoryFeed from "./feed_components/StoryFeed"
 import UserPosts from "./feed_components/UserPosts"
 import SideBar from "./SideBar"
+import UserRecommended from "./UserRecommended"
 
 const UserFeed = () => {
     return (
@@ -13,6 +14,7 @@ const UserFeed = () => {
             </div>
             <div>
                 <SideBar />
+                <UserRecommended />
             </div>
         </div>
     )
