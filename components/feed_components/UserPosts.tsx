@@ -1,15 +1,16 @@
 import faker from "@faker-js/faker"
 import UserPost from "./UserPost"
 
+let ranId: any = faker.random.numeric();
 
 let posts = [{
-    id: faker.random.numeric(),
+    id: ranId * 55,
     username: faker.name.firstName(),
     userImg: faker.image.avatar(),
     img: faker.image.imageUrl(),
     message: faker.random.words()
 }, {
-    id: faker.random.numeric(),
+    id: ranId * 66,
     username: faker.name.firstName(),
     userImg: faker.image.avatar(),
     img: faker.image.imageUrl(),

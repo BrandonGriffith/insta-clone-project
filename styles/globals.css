@@ -5,6 +5,9 @@
 body {
     background-color: rgb(34, 33, 33);
 }
+.backg {
+    background-color: rgb(34, 33, 33);
+}
 
 @layer components {
     .navIcon {
@@ -20,6 +23,10 @@ body {
     .userIcon {
         @apply rounded-full cursor-pointer object-contain
         hover:scale-110 transform duration-150 ease-in-out overflow-hidden
-        border-2 border-blue-400 w-14 h-14
+        border-2 border-blue-400 w-14 h-14 relative
+    }
+    .userPostBtn {
+        @apply h-8 cursor-pointer hover:scale-110 duration-150 
+        transition ease-in-out
     }
 }
