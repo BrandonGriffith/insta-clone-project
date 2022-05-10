@@ -42,7 +42,9 @@ const UserPost = (props: any) => {
                 <input type="text" className="flex-1 border-none
                 rounded-xl outline-none focus:ring-0 bg-slate-800
                 "placeholder="Add a message here..." />
-                <button>Post</button>
+                <button className="font-bold bg-green-800 p-2 rounded-xl
+                hover:scale-125 ease-in-out duration-150
+                ">Post</button>
             </form>
         </div>
     )
