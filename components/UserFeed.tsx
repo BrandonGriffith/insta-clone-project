@@ -12,9 +12,11 @@ const UserFeed = () => {
                 <StoryFeed />
                 <UserPosts />
             </div>
-            <div>
-                <SideBar />
-                <UserRecommended />
+            <div className="hidden xl:grid">
+                <div className="p-2">
+                    <SideBar />
+                    <UserRecommended />
+                </div>
             </div>
         </div>
     )
