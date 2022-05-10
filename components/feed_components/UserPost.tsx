@@ -33,6 +33,10 @@ const UserPost = (props: any) => {
                 </div>
                 <BookmarkIcon className="userPostBtn" />
             </div>
+            <p className="p-4 truncate">
+                <span className="font-bold pr-2">{props.username}: </span>
+                {props.message}
+            </p>
         </div>
     )
 }
