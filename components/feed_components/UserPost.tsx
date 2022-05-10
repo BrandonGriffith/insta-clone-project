@@ -1,4 +1,4 @@
-import { BookmarkIcon, ChatIcon, DotsHorizontalIcon, HeartIcon, PaperAirplaneIcon } from "@heroicons/react/outline"
+import { BookmarkIcon, ChatIcon, DotsHorizontalIcon, EmojiHappyIcon, HeartIcon, PaperAirplaneIcon } from "@heroicons/react/outline"
 import Image from "next/image"
 
 
@@ -37,6 +37,13 @@ const UserPost = (props: any) => {
                 <span className="font-bold pr-2">{props.username}: </span>
                 {props.message}
             </p>
+            <form className="flex p-2 items-center">
+                <EmojiHappyIcon className="userPostBtn m-2" />
+                <input type="text" className="flex-1 border-none
+                rounded-xl outline-none focus:ring-0 bg-slate-800
+                "placeholder="Add a message here..." />
+                <button>Post</button>
+            </form>
         </div>
     )
 }
