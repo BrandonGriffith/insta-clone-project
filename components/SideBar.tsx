@@ -12,11 +12,13 @@ const SideBar = () => {
                     className="rounded-full"
                 />
             </div>
-            <div>
-                <h1>Guest User</h1>
-                <h2>this is an insta clone</h2>
+            <div className="flex-1 mx-2">
+                <h1 className="font-bold">Guest User</h1>
+                <h2 className="text-gray-300">this is an insta clone</h2>
             </div>
-            <button>LogOut</button>
+            <button className="p-4 font-bold text-blue-300
+            hover:text-white hover:scale-110
+            ">LogOut</button>
         </div>
     )
 }

@@ -13,7 +13,7 @@ const UserFeed = () => {
                 <UserPosts />
             </div>
             <div className="hidden xl:grid">
-                <div className="p-2">
+                <div className="pl-8 fixed top-20">
                     <SideBar />
                     <UserRecommended />
                 </div>
