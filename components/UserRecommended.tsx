@@ -26,4 +26,5 @@ const UserRecommended = () => {
         </div>
     )
 }
+
 export default UserRecommended
