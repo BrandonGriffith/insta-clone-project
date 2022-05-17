@@ -36,6 +36,14 @@ const UserRecommended = () => {
                                 priority
                             />
                         </div>
+                        <div className="flex-1 m-2 text-white">
+                            <h2 className="text-md font-bold">
+                                {profile.username}
+                            </h2>
+                            <h3 className="text-xs text-slate-400">
+                                {profile.company.name}
+                            </h3>
+                        </div>
                     </div>
                 ))
             }

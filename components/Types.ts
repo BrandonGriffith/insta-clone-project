@@ -7,6 +7,6 @@ export interface UserProfile {
     website?: string,
     avatar: string,
     address?: string,
-    company?: string,
+    company?: any,
     dob?: Date
 }
