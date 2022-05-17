@@ -1,5 +1,6 @@
 import faker from "@faker-js/faker";
 import { useEffect, useState } from "react"
+import { UserProfile } from "./Types";
 
 const UserRecommended = () => {
     const [recom, setRecom] = useState<any>([]);
@@ -23,6 +24,13 @@ const UserRecommended = () => {
                     See More
                 </button>
             </div>
+            {
+                recom.map((profile: UserProfile) => (
+                    <div key={profile.id}>
+
+                    </div>
+                ))
+            }
         </div>
     )
 }
