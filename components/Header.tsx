@@ -15,7 +15,7 @@ const Header = () => {
             <div className="flex justify-between max-w-7xl lg:mx-auto 
             border-b-4 border-gray-600 pb-1 rounded-lg px-1">
                 <div className="relative cursor-pointer hidden 
-                md:inline-grid flex-1">
+                md:flex w-96">
                     <Image
                         src="/instagram.svg"
                         alt=""
