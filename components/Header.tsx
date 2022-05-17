@@ -14,7 +14,8 @@ const Header = () => {
         <div className="z-40 shadow-md sticky top-0 backg">
             <div className="flex justify-between max-w-7xl lg:mx-auto 
             border-b-4 border-gray-600 pb-1 rounded-lg px-1">
-                <div className="relative w-[20%] cursor-pointer hidden md:inline-grid">
+                <div className="relative w-40 cursor-pointer hidden 
+                md:inline-grid">
                     <Image
                         src="/instagram.svg"
                         alt=""
@@ -29,6 +30,7 @@ const Header = () => {
                         alt=""
                         layout="fill"
                         className="bg-white rounded-lg"
+                        priority
                     />
                 </div>
                 <div className="max-w-sm">
