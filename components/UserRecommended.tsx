@@ -44,6 +44,7 @@ const UserRecommended = () => {
                                 {profile.company.name}
                             </h3>
                         </div>
+                        <button className="text-md font-semibold">Follow</button>
                     </div>
                 ))
             }

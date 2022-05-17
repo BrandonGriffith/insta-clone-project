@@ -19,7 +19,7 @@ let posts = [{
 ]
 const UserPosts = () => {
     return (
-        <div className="text-white">
+        <div className="text-white max-w-4xl m-auto">
             {posts.map((post) => (
                 <UserPost key={post.id}
                     id={post.id} username={post.username}
