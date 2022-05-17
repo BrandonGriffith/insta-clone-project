@@ -20,7 +20,7 @@ const Header = () => {
                         src="/instagram.svg"
                         alt=""
                         layout="fill"
-                        className="rounded-full"
+                        className="bg-white rounded-full"
                         priority
                     />
                 </div>
