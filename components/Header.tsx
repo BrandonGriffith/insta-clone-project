@@ -17,7 +17,7 @@ const Header = () => {
                 <div className="relative cursor-pointer hidden 
                 md:flex w-96">
                     <Image
-                        src="/instagram.svg"
+                        src="/insta.svg"
                         alt=""
                         layout="fill"
                         className="bg-white rounded-full"
