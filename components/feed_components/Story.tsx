@@ -9,7 +9,7 @@ const Story = (props: UserProfile) => {
                     src={props.avatar}
                     alt={props.avatar}
                     layout="fill"
-                    className="rounded-full"
+                    priority
                 />
             </div>
             <p className="text-xs w-14 text-center truncate">{props.username}</p>

@@ -1,4 +1,5 @@
 import faker from "@faker-js/faker";
+import Image from "next/image";
 import { useEffect, useState } from "react"
 import { UserProfile } from "./Types";
 
@@ -7,7 +8,7 @@ const UserRecommended = () => {
     useEffect(() => {
         const recom = [...Array(5)].map((_, i) => (
             {
-                ...faker.helpers.contextualCard,
+                ...faker.helpers.contextualCard(),
                 id: i
             }
         ));
@@ -26,8 +27,15 @@ const UserRecommended = () => {
             </div>
             {
                 recom.map((profile: UserProfile) => (
-                    <div key={profile.id}>
-
+                    <div key={profile.id} className="flex justify-between mt-2 item-center">
+                        <div className="userIcon">
+                            <Image
+                                src={profile.avatar}
+                                alt={profile.avatar}
+                                layout="fill"
+                                priority
+                            />
+                        </div>
                     </div>
                 ))
             }
