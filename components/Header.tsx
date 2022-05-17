@@ -13,11 +13,11 @@ const Header = () => {
     return (
         <div className="z-40 shadow-md sticky top-0 backg">
             <div className="flex justify-between max-w-7xl lg:mx-auto 
-            border-b-4 border-gray-600 pb-1 rounded-lg px-1">
+            border-b-4 border-gray-800 pb-1 rounded-lg px-1">
                 <div className="relative cursor-pointer hidden 
                 md:flex w-96 h-12">
                     <Image
-                        src="/insta.svg"
+                        src="/insta.jpg"
                         alt=""
                         layout="fill"
                         className="bg-white rounded-full"
